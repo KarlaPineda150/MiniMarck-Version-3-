@@ -1,0 +1,69 @@
+﻿@{
+    ViewData["Title"] = "Inicio";
+}
+
+<link rel="stylesheet" href="~/css/Estilo.css">
+
+<div class="inicio-container">
+    <div class="container">
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Tienda MiniMarck</h1>
+                <p>Mejora tu experiencia utilizando nuestra App</p>
+                <a asp-area="Admin" asp-controller="Informe" asp-action="Index" class="btn">Informe</a>
+            </div>
+            <div class="hero-icon">
+                <img src="~/img/ventas_icon.png" alt="Ventas">
+            </div>
+        </section>
+
+        <section class="info">
+            <p>
+                <strong>En MiniMarck</strong> estamos comprometidos con la mejora continua.
+                Escuchamos las necesidades tanto de empleados como de administradores
+                para optimizar el uso de la aplicación y hacerla más eficiente.
+            </p>
+            <p>
+                Si eres empleado: Queremos que tu trabajo sea más ágil y sencillo.
+                Si necesitas funciones que faciliten el registro de ventas o la consulta de productos,
+                ¡háznoslo saber!
+            </p>
+            <p>
+                Si eres administrador: Nos aseguramos de que tengas el control total sobre
+                el inventario y las ventas. Si crees que podemos mejorar la gestión,
+                estamos abiertos a tus sugerencias.
+            </p>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <h2>PRODUCTOS EMP</h2>
+                <ul>
+                    <li>Puedes ver la lista de productos disponibles.</li>
+                    <li>Consulta detalles como nombre, precio y stock.</li>
+                    <li>No puedes agregar ni eliminar productos.</li>
+                </ul>
+                <h2>VENTAS EMP</h2>
+                <ul>
+                    <li>Consulta el historial de ventas registradas.</li>
+                    <li>Agrega nuevas ventas seleccionando los productos y cantidades.</li>
+                    <li>Verifica el total de la venta antes de finalizar la transacción.</li>
+                </ul>
+
+            </div>
+            <div class="feature">
+                <h2>PRODUCTOS ADM</h2>
+                <ul>
+                    <li>Puedes agregar nuevos productos al inventario.</li>
+                    <li>Edita productos existentes (nombre, precio, stock, etc.).</li>
+                    <li>Elimina productos que ya no estén disponibles.</li>
+                </ul>
+                <h2>VENTAS ADM</h2>
+                <ul>
+                    <li>Realiza todas las acciones del empleado.</li>
+                    <li>Gestiona las ventas registradas si es necesario (editar o eliminar registros incorrectos).</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</div>

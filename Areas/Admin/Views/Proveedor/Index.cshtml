@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Proveedores";
+}
+
+<link rel="stylesheet" href="~/css/Estilo.css">
+
+<div class="inicio-container">
+    <div class="container">
+        <section class="proveedores">
+            <h1>Administrar Proveedores</h1>
+
+            <!-- Menú de direcciones -->
+            <div class="breadcrumb">
+                <span>Inicio</span> > <span>Proveedores</span>
+            </div>
+
+            <!-- Botón para crear nuevo proveedor CORREGIDO -->
+            <div class="text-right mb-3">
+                <a asp-action="Create" class="btn btn-nuevo-proveedor">
+                    <i class="fas fa-plus-circle"></i> Nuevo Proveedor
+                </a>
+            </div
+
+            <!-- Tabla de proveedores (vacía) -->
+            <div class="table-responsive">
+                <table id="tablaProveedores" class="table table-striped" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Teléfono</th>
+                            <th>Dirección</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </section>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/Proveedor.js"></script>
+}
