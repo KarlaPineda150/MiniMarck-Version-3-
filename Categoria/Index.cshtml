@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Categorías";
+}
+
+<link rel="stylesheet" href="~/css/Estilo.css">
+
+<div class="inicio-container">
+    <div class="container">
+        <section class="categorias">
+            <h1>Administrar Categorías</h1>
+
+            <!-- Botón para crear nueva categoría -->
+            <div class="text-right mb-3">
+                <a asp-action="Create" class="btn btn-nuevo-proveedor">
+                    <i class="fas fa-plus-circle"></i> Nueva Categoria
+                </a>
+            </div
+
+            <!-- Tabla de categorías -->
+            <div class="table-responsive">
+                <table id="tblCategorias" class="table-custom">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Id</th>
+                            <th>Nombre</th>
+                            <th>Días de Caducidad</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </section>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/Categoria.js"></script>
+}
